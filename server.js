@@ -36,6 +36,6 @@ app.get("/api/:type", (request, response) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`The server is running on ${PORT}.  Better go catch it!`);
 });
