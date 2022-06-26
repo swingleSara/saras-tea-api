@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
-// const cors = require("cors");
+const cors = require("cors");
 const PORT = 8000;
+
+app.use(cors);
 
 const teas = {
   black: {
@@ -20,8 +22,6 @@ const teas = {
     decaf: true,
   },
 };
-
-// app.use(cors);
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
