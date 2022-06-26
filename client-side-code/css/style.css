@@ -1,0 +1,30 @@
+body {
+  background: teal;
+  color: lightgray;
+}
+h1,
+h2,
+button,
+input {
+  font-size: 26pt;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+button,
+input {
+  font-size: 12pt;
+}
+
+section {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#results {
+  font-size: 36pt;
+}
