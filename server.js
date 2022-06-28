@@ -5,8 +5,8 @@ const PORT = 8000;
 
 app.use(cors());
 
-app.use("/js", express.static("js"));
-app.use("/css", express.static("css"));
+app.use("/Tea API", express.static("js"));
+app.use("/Tea API", express.static("css"));
 
 const teas = {
   black: {
