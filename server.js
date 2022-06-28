@@ -5,6 +5,9 @@ const PORT = 8000;
 
 app.use(cors());
 
+app.use("/js", express.static("js"));
+app.use("/css", express.static("css"));
+
 const teas = {
   black: {
     type: "black",
